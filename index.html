@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<!--
+This page makes a Mad Lib story. For an example of a similar page, go here:
+
+http://www.redkid.net/madlibs/
+-->
+
+<html>
+<head>
+<title>My MadLib</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Great+Vibes|IM+Fell+French+Canon+SC|Satisfy|Vollkorn+SC" rel="stylesheet">
+
+</head>
+
+<body>
+
+<h1>My MadLib</h1>
+
+<div class="data">
+
+    <p class="instructions">
+      Enter a value into each field. Then click 'Make Story' to read a funny story.
+    </p>
+
+    <form>
+
+  Type a Verb ending in "ing"<input type="text" id='verb'> <br>
+  Type a 1st Adjective<input type="text" id='adjective1'> <br>
+  Type a 2nd Adjective<input type="text" id='adjective2'> <br>
+  Insert 1st Plural Noun<input type="text" id='plural_noun1'> <br>
+  Type a 3rd Adjective<input type="text" id='adjective3'> <br>
+  Type a Person in the room<input type="text" id='person_inroom1'> <br>
+  Type a 2nd Plural Noun<input type="text" id='plural_noun2'> <br>
+  Type a your 1st Place<input type="text" id='place1'> <br>
+  Type a 4th Adjective<input type="text" id='adjective4'> <br>
+  Type a Celebrity<input type="text" id='celebrity1'> <br>
+  Type a 1st Noun<input type="text" id='noun1'> <br>
+  Type a 3rd Plural Noun<input type="text" id='plural_noun3'> <br>
+  Type a 5th Adjective<input type="text" id='adjective5'> <br>
+  Type a 4th Plural Noun<input type="text" id='plural_noun4'> <br>
+  Type a 5th Plural Noun<input type="text" id='plural_noun5'> <br>
+  Type a 2nd Noun<input type="text" id='noun2'> <br>
+  Type a 6th Plural Noun<input type="text" id='plural_noun6'> <br>
+
+
+  <input type="button" onclick="makeStory()" value="Make Story">
+    </form>
+
+</div>
+
+<div class="story">
+    <h2 id="title">Espionage Art</h2>
+
+    <p id="paragraph_one"></p>
+
+</div>
+
+<script src="story_maker.js"></script>
+
+</body>
+</html>
